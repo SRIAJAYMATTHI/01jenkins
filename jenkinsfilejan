@@ -2,6 +2,7 @@ node {
  def mavenhome = tool name : "maven 3.8.5"
 
  buildName 'HI-${BUILD_NUMBER}'
+ buildDescription 'pipeline in scripted way '
  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
  echo " the node name is = ${env.NODE_NAME}"
  
