@@ -15,11 +15,11 @@ stage("sonar report"){
 sh "$mavenhome/bin/mvn sonar:sonar"
 }// closing tag of sonar report
 
-//
+/*
 stage('arificate repo nexus'){
 sh "$mavenhome/bin/mvn deploy"
 }// stage closer for artifact repo
-//
+
 
 //deploy application in to tomcat
 stage("deploy"){
@@ -28,5 +28,5 @@ sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@1
 }
 }// closer of deloy tomcat stage 
 
-
+*/
 }//node closer
