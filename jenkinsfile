@@ -19,8 +19,8 @@ sh "$mavenhome/bin/mvn sonar:sonar"
 stage('arificate repo nexus'){
 sh "$mavenhome/bin/mvn deploy"
 }// stage closer for artifact repo
-
 //
+
 //deploy application in to tomcat
 stage("deploy"){
 sshagent(['23e7a9f0-0508-4075-8faf-b57d1e64466e']) {
