@@ -8,14 +8,14 @@ stage('code'){
 stage('build'){
 sh "$mavenhome/bin/mvn clean package"
 }// build stage closer
-
+/*
 
 //sonar report
 stage("sonar report"){
 sh "$mavenhome/bin/mvn sonar:sonar"
 }// closing tag of sonar report
 
-/*
+
 stage('arificate repo nexus'){
 sh "$mavenhome/bin/mvn deploy"
 }// stage closer for artifact repo
