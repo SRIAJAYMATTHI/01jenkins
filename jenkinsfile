@@ -3,12 +3,12 @@ node {
 stage('code'){
  git branch: 'development', credentialsId: 'b5abf2a7-31be-4aca-8a7a-adeeaaddebdf', url: 'https://github.com/practicinggit/maven-web-application.git'   
 }  //code closer
-
+/*
 
 stage('build'){
 sh "$mavenhome/bin/mvn clean package"
 }// build stage closer
-/*
+
 
 //sonar report
 stage("sonar report"){
