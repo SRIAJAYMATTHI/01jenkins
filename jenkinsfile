@@ -22,11 +22,11 @@ sh "$mavenhome/bin/mvn deploy"
 //
 
 //deploy application in to tomcat
-stage("deploy"){
-sshagent(['23e7a9f0-0508-4075-8faf-b57d1e64466e']) {
-sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.235.70.176:/opt/apache-tomcat-9.0.59/webapps"
-}
-}// closer of deloy tomcat stage 
+//stage("deploy"){
+//sshagent(['23e7a9f0-0508-4075-8faf-b57d1e64466e']) {
+//sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.235.70.176:/opt/apache-tomcat-9.0.59/webapps"
+//}
+//}// closer of deloy tomcat stage 
 
 //
 }//node closer
